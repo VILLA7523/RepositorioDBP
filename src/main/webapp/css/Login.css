@@ -1,0 +1,146 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
+body{
+	
+    font-size: 20px;
+    background-color : rgba(163,163,163, 1);
+}
+
+#contentform {
+    justify-content : center;    
+    width: 30%;
+    margin: auto;
+    margin-top:100px;
+    border: 10px double #000;
+    padding: 50px;
+    background-color : #fff;
+}
+
+.form__caja-input {
+	position: relative;
+}
+
+.form__input{
+  width: 100%;
+	background: #fff;
+	border: 1px solid #000;
+	border-radius: 3px;
+	height: 40px;
+	transition: .3s ease all;
+  padding: 10px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+   box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+
+.form__input:focus {
+	border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.form__input-error {
+	font-size:15px;
+    color:red;
+	margin-bottom: 0;
+	display: none;
+}
+
+
+.form__input-error-activo {
+	display: block;
+}
+
+.form__icon {
+	position: absolute;
+	right: 10px;
+	bottom:18px;
+	z-index: 200;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.form__caja-correcto .form__icon {
+	color: #1ed12d;
+	opacity: 1;
+}
+.form__caja-correcto .form__input {
+	border: 3px solid #1ed12d;
+}
+
+.form__caja-incorrecto .form__icon {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.form__caja-incorrecto .form__input {
+	border: 3px solid #bb2929;
+}
+
+.form__msj {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.form__msj-activo {
+	display: block;
+}
+
+.form__msj p {
+	margin: 0;
+}
+
+.form__msj-exito {
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+
+.form__msj-exito-activo {
+	display: block;
+}
+
+
+
+div h1{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+button {
+  margin-top: 20px;
+  height: 45px;
+	line-height: 45px;
+	width: 30%;
+    background: #000;
+	color: #fff;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+	
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .1s ease all;
+  }
+  
+button:hover {
+  background: #000;
+	color: #fff;
+	background-color:#fff;
+    color: #000;
+    border-color: #000;
+  box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+  }
+
+  option {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+  }
